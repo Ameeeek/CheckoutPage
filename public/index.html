@@ -16,17 +16,159 @@
 <body>
   <main>
     <div class="container p-12">
-      <div class="container--title">
+      <div class="container--title my-8">
         <h1 class="text-4xl font-semibold">Checkout</h1>
       </div>
-      <div class="container--checkout">
-        <div class="container--item">
-          <div class="container--item--image w-32 h-32 ">
-            <img src="photo1.png" class="rounded-xl">
+      <div class="container--main flex justify-between ml-8">
+        <!-- contact information title -->
+        <div class="contactInformation--title">
+          <h1 class="text-2xl font-semibold">Contact information</h1>
+          
+          <div class="form-control flex flex-col justify-start">
+            <div class="input">
+              <label class="label text-xs font-semibold" >
+                <span class="label-text">email</span>
+              </label> 
+              <div class="input flex  border-2  border-gray-400 rounded-lg">
+                <i class="fas m-2 fa-envelope"></i>
+                <input type="email" placeholder="enter your email address.." required class="input text-base input-bordered">
+              </div>
+            </div>
+            <div class="input">
+              <label class="label text-xs font-semibold" >
+                <span class="label-text">Phone</span>
+              </label> 
+              <div class="input flex  border-2  border-gray-400 rounded-lg">
+                <i class="fas m-2 fa-phone"></i>
+                <input type="telephone" placeholder="Enter your phone number.." required class="input text-base input-bordered">
+              </div>
+            </div>
+          </div>
+          <!-- Shipping address -->
+        <div class="ShippingAddress--title">
+          <h1 class="text-2xl font-semibold">Shipping Address</h1>
+          <div class="form-control flex flex-col justify-start">
+            <div class="input">
+              <label class="label text-xs font-semibold" >
+                <span class="label-text">Full Name</span>
+              </label> 
+              <div class="input flex  border-2  border-gray-400 rounded-lg">
+                <i class="fas m-2 fa-user-circle"></i>
+                <input type="email" placeholder="enter your Full name.." required class="input text-base input-bordered">
+              </div>
+            </div>
+            <div class="input">
+              <label class="label text-xs font-semibold" >
+                <span class="label-text">Address</span>
+              </label> 
+              <div class="input flex  border-2  border-gray-400 rounded-lg">
+                <i class="fas m-2 fa-map-marker-alt"></i>
+                <input type="telephone" placeholder="Enter your address.." required class="input text-base input-bordered">
+              </div>
+            </div>
+            <div class="input">
+              <label class="label text-xs font-semibold" >
+                <span class="label-text">city</span>
+              </label> 
+              <div class="input flex  border-2  border-gray-400 rounded-lg">
+                <i class="fas m-2 fa-city"></i>
+                <input type="telephone" placeholder="Enter your phone number.." required class="input text-base input-bordered">
+              </div>
+            </div>
+            <div class="doubleInput flex">
+              <div class="input">
+                <label class="label text-xs font-semibold" >
+                  <span class="label-text">postal code</span>
+                </label> 
+                <div class="input flex  border-2  border-gray-400 rounded-lg">
+                  <i class="fas m-2 fa-globe"></i>
+                  <select class="select select-bordered">
+                    <option disabled="disabled" selected="selected">Choose your Country</option> 
+                    <option>Indonesia</option> 
+                    <option>America</option> 
+                    <option>Japan</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="input">
+                <label class="label text-xs font-semibold" >
+                  <span class="label-text">postal code</span>
+                </label> 
+                <div class="input flex  border-2  border-gray-400 rounded-lg">
+                  <i class="fas m-2 fa-list-ol"></i>
+                  <input type="telephone" placeholder="Enter your postal code.." required class="input text-base input-bordered">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rememberMe flex">
+            <input type="checkbox" checked="checked" class="checkbox m-2 checkbox-lg">
+            <h2 class="text-gray-400 m-1 text-sm">Remember my information</h2>
+          </div>
+          <div class="flex justify-end">
+            <button class="btn btn-primary border-2 p-5 rounded-lg border-yellow-400 bg-yellow-400">Continue</button> 
           </div>
         </div>
+        </div>
+        <!-- checkout container -->
+        <div class="container--checkout--main ">
+          <div class="container--checkout flex my-8 ">
+            <div class="container--item">
+              <div class="container--item--image w-32 h-32 ">
+                <img src="photo1.png" class="rounded-xl">
+              </div>
+            </div>
+            <div class="container--text p-2 flex flex-col justify-between">
+              <div class="container--text flex flex-col">
+                <h4 class="font-semibold text-base text-gray-600">Vintage Backbag</h4>
+                <div class="container--text-subtitle flex">
+                  <p class="text-sm text-yellow-600">$54.99</p> <p class="text-xs text-gray-600 ml-2"><del>$94.99</del></p>
+                </div>
+              </div>
+              <div class="container--totalItem border-opacity-100 border-2 rounded-lg p-2 border-gray-600 flex">
+                <button ><a class="ngurang cursor-pointer"id="ngurang" ><i id="ngurang" class="fas ngurang fa-minus mx-auto"></i></a></button>
+                <p class="angka mx-auto"id="angka" >0</p>
+                <button ><a class="nambah cursor-pointer"id="nambah" ><i id="nambah" class="fas nambah fa-plus mx-auto"></i></a></button>
+              </div>
+            </div>
+          </div>
+          <div class="container--checkout flex my-8 ">
+            <div class="container--item">
+              <div class="container--item--image w-32 h-32 ">
+                <img src="photo2.png" class="rounded-xl">
+              </div>
+            </div>
+            <div class="container--text p-2 flex flex-col justify-between">
+              <div class="container--text flex flex-col">
+                <h4 class="font-semibold text-base text-gray-600">Vintage Backbag</h4>
+                <div class="container--text-subtitle flex">
+                  <p class="text-sm text-yellow-600">$54.99</p> <p class="text-xs text-gray-600 ml-2"><del>$94.99</del></p>
+                </div>
+              </div>
+              <div class="container--totalItem border-opacity-100 border-2 rounded-lg p-2 border-gray-600 flex">
+                <button ><a class="ngurang cursor-pointer"id="ngurang" ><i id="ngurang" class="fas ngurang fa-minus mx-auto"></i></a></button>
+                <p class="angka mx-auto"id="angka" >0</p>
+                <button ><a class="nambah cursor-pointer"id="nambah" ><i id="nambah" class="fas nambah fa-plus mx-auto"></i></a></button>
+              </div>
+            </div>
+          </div>
+          
+        <div class="container--checkout--total">
+          <div class="shipping border-t-2 my-8  p-5 border-gray-400 flex justify-between">
+            <h1 class="font-semibold text-lg"> Shipping</h1>
+            <p class="font-semibold text-sm"> $19</p>
+          </div>
+          <div class="shipping border-t-2 my-8 p-5  border-gray-400 flex justify-between">
+            <h1 class="font-semibold text-lg"> Total</h1>
+            <p class="font-semibold text-sm"> $148.98</p>
+          </div>
+        </div>
+        </div>
+        
       </div>
     </div>
   </main>
+  <script src="main.js"></script>
 </body>
 </html>
