@@ -8,15 +8,15 @@
 
 <div align="center">
   <h3>
-    <a href="https://ameeeek.github.io/gallery/">
-      Demo
+    <a href="~">
+      ~
     </a>
    <span> | <span>
-      <a href="https://devchallenges.io/solutions/FvpHihEXeCFLTAnusUcv">
+      <a href="https://devchallenges.io/solutions/sBACGAVvgcr9Tzq3KWEU">
          solution
       </a>
    <span> | <span>
-    <a href="https://devchallenges.io/challenges/gcbWLxG6wdennelX7b8I">
+    <a href="https://devchallenges.io/challenges/0J1NxxGhOUYVqihwegfO">
       Challenge
     </a>
   </h3>
@@ -28,7 +28,7 @@
 
 - [Overview](#overview)
   - [Built With](#built-with)
-      [HTML AND PLAINCSS, FLEXBOX FOR THE LAYOUT](#built-with)
+      [HTML, TailwindCSS(daisyUI), plain Javascript](#built-with)
 
       
 
@@ -36,12 +36,11 @@
 
 ## Overview
 
-<img src='screely-1634463334568.png'>
+<img src='screely-1634641023023.png'>
+<img src='screely-1634640743282.png'>
 
 
 
-- Where can I see your demo?
-      on https://ameeeek.github.io/gallery
 - What was your experience?
       it was fun
 - What have you learned/improved? 
