@@ -1,0 +1,6 @@
+@media (max-width: 768px){
+    .container--main{
+        display:flex;
+        flex-direction: column-reverse;
+    }
+}
